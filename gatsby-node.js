@@ -5,7 +5,7 @@ const stringify = require('json-stringify-safe')
 
 exports.sourceNodes = async function({ boundActionCreators }, options) {
   const { createNode, setPluginStatus } = boundActionCreators;
-  const client = new StoryblokClient(options, 'https://api.storyblok.com/v1');
+  const client = new StoryblokClient(options, 'https://api.storyblok.com/v2');
 
   Sync.init({
     createNode,
